@@ -1,11 +1,13 @@
-import './App.css'
+import './css/App.css';
+import Calander from './components/calendar'
 
 function App() {
 
   return (
     <>
-      <div> 
-        <h1>These are some react Widgets.</h1>
+      <h1>These are some react Widgets.</h1>
+      <div className='main'> 
+        <Calander />
       </div>
     </>
   )
