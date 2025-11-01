@@ -21,14 +21,14 @@ export default function Marquee() {
   }, []);
 
   return (
-    <div className="bg-[#141414] border border-gray-700 rounded-2xl py-2 overflow-hidden">
-      <div className="animate-marquee whitespace-nowrap text-center text-sm font-medium">
+    <div className="bg-[#141414] border text-white border-gray-700 rounded-2xl py-2 overflow-hidden">
+      <div className="animate-marquee whitespace-nowrap text-center text-sm font-medium w-fit ">
         ETH: ${prices.ETH} | SOL: ${prices.SOL}
       </div>
       <style>{`
         .animate-marquee {
           display: inline-block;
-          animation: marquee 15s linear infinite;
+          animation: marquee 30s linear infinite;
         }
         @keyframes marquee {
           0% { transform: translateX(100%); }
