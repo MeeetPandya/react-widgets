@@ -6,7 +6,7 @@ export const GifPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(true);
     
     //Placeholder GIF URL
-    const gifUrl = "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif";
+    const gifUrl = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTdvZWxtODV3Ymd3NGRzYTk2ZHFsZ2JrN3phNjRjeGd3Y25nanF0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LHZyixOnHwDDy/giphy.gif";
 
     return (
         <WidgetCard title="Gif Player">
