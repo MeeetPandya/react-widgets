@@ -7,7 +7,7 @@ import Marquee from './components/widgets/Marquee';
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-gray-100 flex p-4 flex-col gap-4">
+      <div className="min-h-screen min-w-screen bg-secondary font-sans flex p-4 flex-col gap-4 ">
         <Header />
         <Marquee />
         <div className='gap-2 grid grid-cols-5 mx-auto'>

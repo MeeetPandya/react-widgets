@@ -16,12 +16,12 @@ export default function Marquee() {
       }
     };
     fetchPrices();
-    const interval = setInterval(fetchPrices, 6000);
+    const interval = setInterval(fetchPrices, 60000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bg-[#141414] border text-white border-gray-700 rounded-2xl py-2 overflow-hidden">
+    <div className="bg-linear-60 from-black to-emerald-600 border text-white border-gray-700 rounded-2xl py-2 overflow-hidden">
       <div className="animate-marquee whitespace-nowrap text-center text-sm font-medium w-screen ">
         ETH: ${prices.ETH} | SOL: ${prices.SOL} | BTC: ${prices.BTC} |
         ETH: ${prices.ETH} | SOL: ${prices.SOL} | BTC: ${prices.BTC} |
@@ -30,11 +30,12 @@ export default function Marquee() {
       <style>{`
         .animate-marquee {
           display: inline-block;
-          animation: marquee 20s linear infinite;
+          animation: marquee 25s linear infinite;
         }
         @keyframes marquee {
           0% { transform: translateX(95%); }
           100% { transform: translateX(-95%); }
+          0% { transform: translateX(100%); }
 
         }
       `}</style>

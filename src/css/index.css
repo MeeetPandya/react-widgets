@@ -1,10 +1,8 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 @theme {
   --color-primary: #d3d3d3;
-  --color-secondary: #9333ea;
-  --font-family-sans: "Quantico", sans-serif;
+  --color-secondary: #4b5563;
+  --font-family-sans: sans-serif;
 }
 
 @layer base {
@@ -30,11 +28,5 @@
     --input: 250 48% 25%;
     --ring: 190 100% 44%;
     --radius: 1rem;
-  }
-}
-
-@layer base {
-  body {
-    @apply bg-background text-foreground;
   }
 }
